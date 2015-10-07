@@ -22,6 +22,9 @@ You can clone the repo and submit a pull request.
 ### Setup instructions
 
 1) Install meteor by following instructions here: https://www.meteor.com/install
+
 2) clone this repo
+
 3) cd into the repo
+
 4) type "meteor run" in the command line
