@@ -1,0 +1,50 @@
+
+<template name="todos">
+  {{> addTodo}}
+
+  <ul>
+    {{#each todo}}
+      {{> todoItem}}
+    {{/each}}
+  </ul>
+
+  {{> summary}}
+</template>
+
+
+<template name="todoItem">
+  <li>
+    <input type="checkbox" {{checked}}>
+    {{name}} |
+    <a href="#" class="todo-delete">
+    Delete</a>
+  </li>
+</template>
+
+
+<template name="addTodo">
+  <form>
+    Create a task:
+    <input type="text" placeholder="Type a task here..." name="todoName">
+  </form>
+</template>
+
+<template name="summary">
+  <p>
+    You have completed {{totalCompleted}} tasks out of {{totalTasks}} tasks.
+  </p>
+</template>
+
+
+<template name="home">
+  <h2>Welcome to the home page</h2>
+  {{> todos}}
+</template>
+
+<template name="login">
+  <h2>Login</h2>
+</template>
+
+<template name="register">
+  <h2>Register</h2>
+</template>
